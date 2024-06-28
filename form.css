@@ -1,0 +1,28 @@
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid#ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.form-label{   /* метки */
+font-weight: bold;
+}    
+
+/*поле ввода*/
+form-control{
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*submit*/
+.btn-primary{
+    background-color: #166dc9;
+    border-color: #166dc9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+

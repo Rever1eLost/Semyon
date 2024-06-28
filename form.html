@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6">
+          <label for="validationServerFIO" class="form-label">ФИО</label>
+          <input type="text" class="form-control" id="validationServerFIO" pattern="^[А-Яа-яЁе\s]+$"value="" required>
+          <div class="invalid-feedback">
+            Пожалуйста, введите ваше ФИО
+          </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationServerPhone" class="form-label">Телефон</label>
+            <input type="tel" class="form-control" id="validationServerPhone" pattern="^\+?\d{10,15}$value=">
+            <div class="invalid-feedback">
+              Пожалуйста, введите корректный номер телефона.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="validationServerEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="validationServerEmail" required>
+            <div class="invalid-feedback">
+              Пожалуйста, введите адресс электронной почты.
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="validationServerStartDate" class="form-label">Дата начала аренды</label>
+            <input type="date" class="form-control" id="validationServerStartDate" required>
+            <div class="invalid-feedback">
+              Пожалуйста, выберите дату не ранее следующего дня.
+            </div>
+          </div>
+        
+        <div class="col-md-6">
+            <label for="validationServerDays" class="form-label">Время аренды (в днях)</label>
+            <input type="number" class="form-control" id="validationServerDays" min="1" required>
+            <div class="invalid-feedback">
+              Пожалуйста, введите количество дней аренды (больше одного).
+            </div>
+          </div>
+        
+        
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Отправить</button>
+        </div>
+      </form>
+      <script src="form validation.js"></script>
+</body>
+</html>

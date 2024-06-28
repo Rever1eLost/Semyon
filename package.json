@@ -1,0 +1,11 @@
+{
+	
+	"predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
